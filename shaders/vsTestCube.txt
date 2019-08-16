@@ -1,0 +1,11 @@
+#version 330 core
+
+layout(location = 0) in vec3 position;
+//out vec4 inColor;
+
+void main()
+{
+		vec3 modifiedPos = position * vec3(0.002, 0.002, 0.002);
+		gl_Position = vec4(modifiedPos, 1.0);
+		//inColor = gl_Position;
+}
